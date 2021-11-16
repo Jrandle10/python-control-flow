@@ -33,4 +33,8 @@
 # 3. Return to step 1, unless the word 'quit' was entered.
 
 
-phrase = input('Please enter a word or phrase:').lower()
+phrase = ''
+while phrase != 'quit':
+  phrase = input('Please enter a word or phrase: ')
+  print(f'The phrase you entered is {len(phrase.replace(" ", ""))} characters long')
+
